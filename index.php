@@ -19,6 +19,19 @@
       </div>
   </header>
 
+  <section>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-8">
+                  <h1>About Me</h1>
+              </div>
+              <div class="col-md-4">
+                  <p>picture</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
     
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
