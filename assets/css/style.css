@@ -1,9 +1,47 @@
 /*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
 
+body{
+    font-family: 'Source Code Pro', monospace;;
+}
 
+a{
+    color: #0062cc;
+    font-weight: 800!important;
+    text-transform: none!important;
+}
+a:hover{
+    color: #0062cc;
+    text-transform: none!important;
+    text-decoration: none;
+}
 /*Normal*/
 .banner{
     height: 50vh;
+}
+.skew-banner{
+    overflow: hidden;
+    position: relative;
+}
+.skew-banner::after{
+    content: "";
+    position: absolute;
+    width: 105px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transform: skew(-12deg); 
+    -ms-transform: skew(-12deg);
+    transform: skew(-12deg);
+    transform-origin: top left;
+    background-color: #ffffff;
+}
+.mt-banner{
+    margin-top: 22.5vh;
+}
+.title-banner{
+    font-size: 3.5rem;
+    font-weight: 900;
 }
 .bg-black{
     background-color: #000000 ;
