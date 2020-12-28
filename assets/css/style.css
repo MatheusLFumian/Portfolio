@@ -1,8 +1,40 @@
 /*Fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 
 body{
-    font-family: 'Source Code Pro', monospace;;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Colors */
+.my-color-1 { color: #072026; }
+.my-bg-color-1 { background-color: #072026; }
+.my-color-2 { color: #103B40; }
+.my-bg-color-2 { background-color: #103B40; }
+.my-color-3 { color: #2C6C73; }
+.my-bg-color-3 { background-color: #2C6C73; }
+.my-color-4 { color: #6ACED9; }
+.my-bg-color-4 { background-color: #6ACED9; }
+.my-color-5 { color: #1BA698; }
+.my-bg-color-5 { background-color: #1BA698; }
+
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+	width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #eeeeee;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #000000;
 }
 
 a{
@@ -15,9 +47,33 @@ a:hover{
     text-transform: none!important;
     text-decoration: none;
 }
+.btn-this{
+    background-color: transparent;
+    color: #fff!important;
+    border: solid 2px #fff!important;
+    border-radius: 50px!important;
+    transition: ease 0.3s;
+    -webkit-transition: ease 0.3s;
+    -moz-transition: ease 0.3s;
+}
+.btn-this:hover{
+    background-color: transparent;
+    color:  #1BA698!important;
+    border: solid 2px  #1BA698!important;
+    border-radius: 50px!important;
+    transition: ease 0.3s;
+    -webkit-transition: ease 0.3s;
+    -moz-transition: ease 0.3s;
+}
 /*Normal*/
 .banner{
-    height: 50vh;
+    height: 100vh;
+    background-image: url('../img/bg-texture-2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+
 }
 .skew-banner{
     overflow: hidden;
@@ -37,11 +93,12 @@ a:hover{
     background-color: #ffffff;
 }
 .mt-banner{
-    margin-top: 22.5vh;
+    margin-top: 30vh;
 }
 .title-banner{
-    font-size: 3.5rem;
-    font-weight: 900;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
 }
 .bg-black{
     background-color: #000000 ;
