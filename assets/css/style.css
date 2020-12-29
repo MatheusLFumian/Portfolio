@@ -4,22 +4,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 
+html{
+	scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
+    background-color: #eeeeee;
 }
 
 /* Colors */
 .my-color-1 { color: #072026; }
-.my-bg-color-1 { background-color: #072026; }
+.my-bg-color-1 { background-color: #072026!important; }
 .my-color-2 { color: #103B40; }
 .my-bg-color-2 { background-color: #103B40; }
 .my-color-3 { color: #2C6C73; }
 .my-bg-color-3 { background-color: #2C6C73; }
 .my-color-4 { color: #6ACED9; }
 .my-bg-color-4 { background-color: #6ACED9; }
+.my-bg-color-4-2{background-color: rgba(106,206,217,0.25);}
 .my-color-5 { color: #1BA698; }
 .my-bg-color-5 { background-color: #1BA698; }
-
+.my-white{ color: #ffffff!important;}
+.my-bg-transparent{background-color: transparent!important;}
 
 /* Scrollbar */
 /* width */
@@ -34,7 +41,7 @@ body{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #103B40;
+    background: #1BA698;
     border-radius: 5px;
 }
 
@@ -76,22 +83,30 @@ a:hover{
     background-attachment: fixed;
 
 }
-.skew-banner{
-    overflow: hidden;
-    position: relative;
+.my-bg{
+    background-image: url('../img/bg-texture-2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
 }
-.skew-banner::after{
-    content: "";
-    position: absolute;
-    width: 105px;
-    height: 100%;
-    top: 0;
-    left: 0;
-    -webkit-transform: skew(-12deg); 
-    -ms-transform: skew(-12deg);
-    transform: skew(-12deg);
-    transform-origin: top left;
-    background-color: #ffffff;
+.my-nav{
+    background: transparent;
+    height: 10vh;
+}
+.my-nav a{
+    color: #ffffff;
+    font-size: 20px;
+}
+.my-nav a:hover{
+    text-shadow: -5px 5px 10px #FFFFFF;
+}
+.my-bg-nav{
+    background-color: #072026;
+    border-bottom: solid 2px #1BA698;
+    -webkit-box-shadow: 0px 10px 25px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 10px 25px 0px rgba(0,0,0,1);
+    box-shadow: 0px 10px 25px 0px rgba(0,0,0,1);
 }
 .mt-banner{
     margin-top: 30vh;
@@ -104,6 +119,27 @@ a:hover{
 .bg-black{
     background-color: #000000 ;
     color: #ffffff;
+}
+
+.img-rocket{    
+    -webkit-animation: rocket 2s linear infinite both alternate;
+    animation: rocket 2s linear infinite both alternate;
+    z-index: 1000;
+
+    max-width: 100%;
+    height: auto;
+    will-change: transform;
+}
+
+@keyframes rocket{
+    0% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+    }
+    100% {
+        -webkit-transform: rotate(25deg);
+        transform: rotate(25deg);
+    }
 }
 
 /*Mobile*/

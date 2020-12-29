@@ -15,24 +15,53 @@
 
 <body>
 
-    <header class="banner">
+    <nav class="navbar navbar-expand-lg fixed-top my-nav my-bg-transparent" id="menu">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-5">
+                        <a class="nav-link" href="#Inicio">Início</a>
+                    </li>
+                    <li class="nav-item px-5">
+                        <a class="nav-link" href="#Sobre">Sobre Mim</a>
+                    </li>
+                    <li class="nav-item px-5">
+                        <a class="nav-link" href="#Stacks">Stacks</a>
+                    </li>
+                    <li class="nav-item px-5">
+                        <a class="nav-link" href="#Futuro">Futuro</a>
+                    </li>
+                    <li class="nav-item px-5">
+                        <a class="nav-link" href="#Links">Links</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="banner" id="Inicio">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 text-center mt-banner">
                     <h1 class="title-banner">
-                        Matheus Lessa Fumian
-                        <br>
-                        Fullstack Developer
+                        Matheus L. Fumian
                     </h1>
+                    <h2 class="my-white">
+                        Fullstack Developer
+                    </h2>
                 </div>
                 <div class="col-md-12 text-center mt-5">
-                    <a href="#"><button class="btn btn-lg px-4 btn-this">Saiba Mais</button></a>
+                    <a href="#"><button class="btn btn-lg px-4 btn-this">Opa! Bão? Entra aí sô, tem café!</button></a>
                 </div>
             </div>
         </div>
     </header>
 
-    <section>
+    <article id="Sobre">
         <div class="container py-5">
             <div class="row">
                 <div class="col-md-12">
@@ -59,10 +88,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </article>
 
-    <section>
-        <div class="container">
+    <section id="Stacks">
+        <div class="container py-4">
             <div class="row">
                 <div class="col-12 text-center">
                     <h2 class="my-color-3 text-center mt-5 text-uppercase font-weight-bolder">Stacks que domino</h2>
@@ -75,18 +104,20 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-3">
-                            <img src="./assets/img/html.png" alt="HTML" class="img-fluid">
+                            <img src="./assets/img/html-css-js.png" alt="Base" class="img-fluid">
                         </div>
                         <div class="col-md-9">
                             <h3 class="my-color-5">
-                                HTML
+                                HTML, CSS, JavaScript
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.</p>
+                            <p>
+                                Podemos descrever esse trio como a base para o desenvolvimento de sites e aplicações mas
+                                não se engane, são ferramentas muitos poderosas e excênciais para um programador.
+                            </p>
+                            <p>
+                                Meu primeiro contato com essas ferramentas foi no início da faculdade. Aprendi de forma
+                                rápida como aplicar as tags para desenvolver uma página básica e funcional.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -94,18 +125,21 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-3">
-                            <img src="./assets/img/css.png" alt="HTML" class="img-fluid">
+                            <img src="./assets/img/bs.png" alt="Bootstrap" class="img-fluid">
                         </div>
                         <div class="col-md-9">
                             <h3 class="my-color-5">
-                                CSS
+                                Bootstrap
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.</p>
+                            <p>
+                                Um framework bem conhecido e poderoso que junta toda a base do HTML, CSS e JavaScript em
+                                um só lugar trazendo mais produtividade no trabalho.
+                            </p>
+                            <p>
+                                Conheci o Bootstrap na entrevista para o meu primeiro estágio e, como já dominava a base
+                                do desenvolvimento web, aprendi rapidamente e com o passar do tempo me tornei cada vez
+                                mais produtivo utilizando a ferramenta.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -113,18 +147,26 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-3">
-                            <img src="./assets/img/php.png" alt="HTML" class="img-fluid">
+                            <img src="./assets/img/php.png" alt="PHP" class="img-fluid">
                         </div>
                         <div class="col-md-9">
                             <h3 class="my-color-5">
                                 PHP
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.</p>
+                            <p>
+                                A linguagem de programação voltada para web mais utilizada. Amada por muitos, odiada por
+                                tantos outros. O PHP é uma linguagem com uma curva de aprendizado relativamente baixa.
+                                Com pouco tempo já é possível criar aplicações pequenas para receber os dados de um
+                                formulário mas algo que muitos não percebem é sua robustez quando associada à uma
+                                arquitetura de software poderosa. Com uma arquitetura MVC a linguagem ganha um poder
+                                grande podendo ser utilizada no desenvolvimento de sistemas mais complexos.
+                            </p>
+                            <P>
+                                Tive meu primeiro contato com o PHP no estágio, lia a documentação, aprendia com os
+                                sistemas utilizados na empresa e comecei a desenvolver sites e alguns sistemas um pouco
+                                mais complexos ainda no estágio. Atualmente desenvolvo sites mais simples e sistemas
+                                complexos com ela.
+                            </P>
                         </div>
                     </div>
                 </div>
@@ -132,18 +174,24 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-3">
-                            <img src="./assets/img/mysql.png" alt="HTML" class="img-fluid">
+                            <img src="./assets/img/mysql.png" alt="MySQL" class="img-fluid">
                         </div>
                         <div class="col-md-9">
                             <h3 class="my-color-5">
                                 MySQL
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.</p>
+                            <p>Junto do PHP formam a dupla mais utilizada no Backend de aplicações web. O sistema de
+                                gerenciamento de banco de dados
+                                MySQL é uma ferramenta integrada na maioria dos servidores atuais, tem uma compreensão
+                                simples de como armazenar e tratar os dados e conta com sistemas que facilitam o nosso
+                                trabalho como o phpMyAdmin e o MySQL Workbench.
+                            </p>
+                            <p>
+                                Comecei a utilizar o MySQL no estágio para armazenar os dados de leads dos clientes da
+                                agência. Com o tempo percebi o poder de buscar, analisar os leads recebidos e comparar
+                                com o andamento das campanhas de marketing. Uma ferramenta muito simples mas que pode
+                                gerar insites valiosos para as empresas.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -151,37 +199,74 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-3">
-                            <img src="./assets/img/js.png" alt="HTML" class="img-fluid">
-                        </div>
-                        <div class="col-md-9">
-                            <h3 class="my-color-5">
-                                JavaScript
-                            </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="./assets/img/wp.png" alt="HTML" class="img-fluid">
+                            <img src="./assets/img/wp.png" alt="WordPress" class="img-fluid">
                         </div>
                         <div class="col-md-9">
                             <h3 class="my-color-5">
                                 WordPress
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.</p>
+                            <p>
+                                Finalmente chegamos no rei da internet, a ferramenta criada para facilitar a vida de
+                                muitas pessoas dando a elas o poder de criar sites completos sem ao menos escrever uma
+                                linha de código. O WordPress é uma sistema open source muito conhecido que domina a
+                                World Wide Web. Escrito em o PHP ele traz diversas funcionalidades próprias que já
+                                permitem qualquer pessoa criar um blog em instantes. Além disso, é possível desenvolver
+                                temas e plugins para uso próprio ou uso comercial e é nesse ponto que eu me interessei
+                                por essa ferramenta.
+                            </p>
+                            <p>
+                                Utilizo o WordPress como um sistema de gerencimento de conteúdo para boa parte dos
+                                sites. Assim, não preciso me preocupar em reescrever um sistema assim para cada cliente,
+                                basta fazer algumas modificações, configurações e tenho um painel super intuitivo para
+                                cada um. Além disso a manutenção, publicação, e outros fatores são facilitados
+                                utilizando bem o rei da web.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="./assets/img/python.png" alt="Python" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <h3 class="my-color-5">
+                                Python
+                            </h3>
+                            <p>
+                                Uma linguagem de programação que conheci no início da faculdade de Tecnologia em
+                                Sistemas de Computação e logo me apaixonei. Sua curva de aprendizado é baixa, possui uma
+                                sintaxe simples e bibliotecas que podem fazer coisas incríveis.
+                            </p>
+                            <p>
+                                Automação, desenvolvimento web e machine learning são as coisas que mais fazem os meus
+                                olhos brilharem quando penso em Python. Com poucas linhas é possível gerar um valor
+                                absurdo para sua produtividade e para o crescimento de sua empresa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="./assets/img/data-studio.png" alt="DataStudio" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <h3 class="my-color-5">
+                                Google Data Studio
+                            </h3>
+                            <p>
+                                Ferramenta simples, intuitiva e extremamente poderosa, capaz de criar visualizações de
+                                dados dos clientes de forma dinâmica. Pode ser alimentada através de bancos de dados
+                                SQL, tabelas do Google Sheets e outras fontes como o próprio Google Analytics.
+                            </p>
+                            <p>
+                                Como sua integração é simples com as ferramentas de rastreio de sites do Google, banco
+                                de dados e outras ferramentas que utilizamos nos sites além de ser gratuita, utilizo o
+                                Data Studio para dar aos clientes uma perspectiva de como seu negócio está fluindo.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -190,6 +275,83 @@
         </div>
 
     </section>
+
+    <section class="my-bg my-white" id="Futuro">
+        <div class="container py-5">
+            <div class="row pt-5">
+                <div class="col-md-12 text-center">
+                    <h1 class="font-weight-bolder text-uppercase">Pretenções para o futuro</h1>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-9">
+                    <p>
+                        Vejo a programação como uma ferramenta e pretendo usá-la para solucionar os mais diversos
+                        problemas. Na internet eu vejo o futuro, seu negócio pode estar aqui, seus amigos, suas
+                        ferramentas de trabalho, enfim, tudo pode ser encontrado dentro do navegador.
+                        Meu objetivo é solucionar os problemas das empresas auxiliando elas a obterem mais lucro, maior
+                        crescimento e uma integração maior com a tecnologia.
+                    </p>
+                    <p>
+                        Pretendo me tornar um bom desenvolvedor Web, refinar minhas habilidades e poder entregar ainda
+                        mais resultado a curto prazo. Já a longo prazo, pretendo me especializar em Data Science, ou
+                        seja, ajudar a colher e analisar os dados de hoje e dar insites e previsões com o machine
+                        learning para auxiliar nas decisões do futuro.
+                    </p>
+                    <p>Acredito que o crescimento e o aprendizado devam ser um objetivo constante para todos. Jamais
+                        devemos nos esquecer de amar o próximo para construir uma sociedade melhor. Se formos
+                        1% melhor a cada dia, amarmos 1% mais a cada instante, em breve poderemos chegar à Lua, quissá
+                        ao Céu.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="./assets/img/rocket.png" alt="Rocket" class="img-rocket">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 my-bg-color-4-2" id="Links">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="font-weight-bolder text-uppercase my-color-2">Me encontre nas redes!</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center py-4">
+                <div class="col-md-1 col-2">
+                    <a href="https://github.com/MatheusLFumian" target="_blank"><img src="./assets/img/github.png"
+                            alt="" class="img-fluid"></a>
+                </div>
+                <div class="col-md-1 col-2">
+                    <a href="https://www.linkedin.com/in/matheus-fumian-297126160/" target="_blank"><img
+                            src="./assets/img/linkedin.png" alt="" class="img-fluid"></a>
+                </div>
+                <div class="col-md-1 col-2">
+                    <a href="https://www.instagram.com/mt_lf/" target="_blank"><img src="./assets/img/instagram2.png"
+                            alt="" class="img-fluid"></a>
+                </div>
+                <div class="col-md-1 col-2">
+                    <a href="https://www.facebook.com/matheus.fumian" target="_blank"><img
+                            src="./assets/img/facebook.png" alt="" class="img-fluid"></a>
+                </div>
+                <div class="col-md-1 col-2">
+                    <a href="https://wa.me/5524992824045?text=Gostei do seu site, podemos conversar?"
+                        target="_blank"><img src="./assets/img/whatsapp2.png" alt="" class="img-fluid"></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="my-bg-color-1">
+        <div class="container-fluid py-2">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <small class="my-white">Matheus L. Fumian. All Rights Reserved. 2021</small>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -210,11 +372,22 @@
     <script>
         $('#stacks').slick({
             dots: true,
-            arrows: true,
+            arrows: false,
             infinite: false,
             slidesToShow: 1,
             slidesToScroll: 1,
         });
+    </script>
+
+    <script>
+        jQuery(window).scroll(function () {
+            if (jQuery(this).scrollTop() > 100) {
+                $("#menu").addClass("my-bg-nav");
+            } else {
+                $("#menu").removeClass("my-bg-transparent");
+            }
+        });
+
     </script>
 </body>
 
