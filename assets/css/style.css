@@ -26,8 +26,10 @@ body{
 .my-color-5 { color: #1BA698; }
 .my-bg-color-5 { background-color: #1BA698; }
 .my-white{ color: #ffffff!important;}
-.my-bg-transparent{background-color: transparent!important;}
-
+.my-bg-transparent{background-color: transparent;}
+.my-bg-transparent-c{
+    background-color: transparent!important;
+}
 /* Scrollbar */
 /* width */
 ::-webkit-scrollbar {
@@ -91,7 +93,6 @@ a:hover{
     background-attachment: fixed;
 }
 .my-nav{
-    background: transparent;
     height: 10vh;
 }
 .my-nav a{
@@ -143,11 +144,31 @@ a:hover{
 }
 
 /*Mobile*/
-@media (max-width: 599px) {  }
+@media (max-width: 599px) { 
+    .my-bg-transparent-c{
+        background-color: #072026;
+    }
+    .title-banner{
+        font-size: 3.2rem;
+        font-weight: 700;
+        color: #fff;
+    }
+    .img-rocket{    
+        -webkit-animation: rocket 2s linear infinite both alternate;
+        animation: rocket 2s linear infinite both alternate;
+        z-index: 1000;
+    
+        max-width: 50%;
+        height: auto;
+        will-change: transform;
+    }
+ }
 
 
 /*Mobile and tablets*/
-@media (min-width: 600px) {  }
+@media (min-width: 600px) { 
+    
+ }
 
 @media (min-width: 900px) {  }
 
